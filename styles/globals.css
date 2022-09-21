@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    html {
+      font-family: Poppins, system-ui, sans-serif;
+
+      
+    }
+    
+  }
+@layer components {
+    .contactInput {
+        @apply outline-none bg-slate-400/10 border-b px-6 py-4 border-[#242424]
+        text-gray-500 placeholder-gray-500 transition-all focus:border-[#F7AB0A] focus:text-[#F7AB0A]
+        hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40    
+    }
+}
+
+.codeBlock > * {
+    width: 85vw;
+    height: 65vh;
+    overflow-inline:initial;
+    text-align: justify;
+
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #F7AB0A;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #F7AB0A;
+  }
