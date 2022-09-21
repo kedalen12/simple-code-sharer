@@ -1,7 +1,6 @@
 import React from 'react'
 import CodeViewer from './CodeBlock'
 import { SaveCodeBlock } from '../firebase'
-import {} from 'react-code-blocks'
 type Props = {
     callBackOnButtonPress: (where: 'creator' | 'about') => void
 }
@@ -171,13 +170,13 @@ function SnippetCreate({callBackOnButtonPress }: Props) {
                   <div className='flex space-x-2'>
                     <input type={'text'} placeholder='Snippet Title' value={title} onChange={(e)=> setTitle(e.target.value)} className="contactInput mb-5 w-full uppercase"/>
                     <select className="contactInput mb-5 w-full uppercase" onChange={(e) => {setCurrentLang(e.target.value)}}>
-                       {Languages.map(language => {
-                          return <option className='bg-gray-500 text-white uppercase' value={language}>{language}</option>;
+                       {Languages.map((language,i) => {
+                          return <option key={i} className='bg-gray-500 text-white uppercase' value={language}>{language}</option>;
                        })}
                     </select>
                     <select className="contactInput mb-5 w-full uppercase" onChange={(e) => {setCurrentTheme(e.target.value)}}>
-                       {Themes.map(language => {
-                          return <option className='bg-gray-500 text-white uppercase'  value={language}>{language}</option>;
+                       {Themes.map((theme,i) => {
+                          return <option key={i} className='bg-gray-500 text-white uppercase'  value={theme}>{theme}</option>;
                        })}
                     </select>
                     </div>

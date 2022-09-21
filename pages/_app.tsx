@@ -1,7 +1,6 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { AuthProvider, useAuth } from '../stores/AuthContext'
-import Login from '../components/Login'
 
 function App({ Component, pageProps }: any) {
 
