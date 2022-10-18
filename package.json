@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "firebase": "^9.10.0",
-    "framer-motion": "^7.3.6",
+    "framer-motion": "^7.4.0",
     "i": "^0.3.7",
     "moment": "^2.29.4",
     "next": "12.3.1",
