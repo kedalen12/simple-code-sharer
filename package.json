@@ -9,17 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "firebase": "^9.10.0",
+    "firebase": "^10.2.0",
     "framer-motion": "^7.3.6",
     "i": "^0.3.7",
     "moment": "^2.29.4",
     "next": "12.3.1",
-    "npm": "^8.19.2",
+    "npm": "^10.8.0",
     "react": "18.2.0",
     "react-code-blocks": "^0.0.9-0",
     "react-dom": "18.2.0",
     "react-firebase-hooks": "^5.0.3",
-    "react-simple-typewriter": "^4.0.2",
+    "react-simple-typewriter": "^4.0.3",
     "react-social-icons": "^5.14.0",
     "tailwind-scrollbar": "^2.0.1"
   },
